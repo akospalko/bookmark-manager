@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark storage</title>
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Bookmark button -->
+    <h1 id="bookmark-button" title="Add bookmark"> Add Bookmark </h1>
+    <!--Bookmarks  -->
+    <div class="bookmark-container" id="bookmark-container">
+        <!-- populate this container using JS  -->
+    </div>
+    <!-- Modal -->
+    <div class="modal-container" id="modal-container">
+        <div class="modal">
+            <!-- Exit modal icon -->
+                <i class="fas fa-skull close-modal" id="close-modal-button" title="Close modal window"></i> 
+            <!-- Modal header -->
+            <div class="modal-header">
+                <h3> Add Bookmark </h3>
+            </div>
+            <!-- Modal content -->
+            <div class="modal-content">
+                <form id="form-container">
+                    <!-- Website name -->
+                    <div class="form-group">
+                        <label for="website-name" class="form-label">Website Name</label>
+                        <input type="text" class="form-input" id="website-name">
+                    </div>
+                    <!-- Website URL -->
+                    <div class="form-group">
+                        <label for="website-url" class="form-label">URL</label>
+                        <input type="text" class="form-input" id="website-url">
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" title="Save bookmark">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Script -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
